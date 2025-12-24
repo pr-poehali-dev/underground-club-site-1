@@ -77,4 +77,9 @@
       0 0 10px rgba(132, 204, 22, 0.3),
       inset 0 0 10px rgba(132, 204, 22, 0.1);
   }
+
+  .gamepad-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 30c-8 0-15 3-20 8l-5 5c-3 3-8 3-11 0-3-3-3-8 0-11l5-5c7-7 17-11 27-11s20 4 27 11l5 5c3 3 3 8 0 11-3 3-8 3-11 0l-5-5c-5-5-12-8-20-8zm0 60c8 0 15-3 20-8l5-5c3-3 8-3 11 0 3 3 3 8 0 11l-5 5c-7 7-17 11-27 11s-20-4-27-11l-5-5c-3-3-3-8 0-11 3-3 8-3 11 0l5 5c5 5 12 8 20 8z' fill='%2384cc16' fill-opacity='0.03'/%3E%3C/svg%3E");
+    background-size: 120px 120px;
+  }
 }
