@@ -6,74 +6,16 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
-  const frames = [
-    {
-      title: 'Frame 1',
-      image: 'https://cdn.poehali.dev/files/Скриншот 25-12-2025 005211.jpg',
-      labels: ['О НАС', 'КЛУБ', 'ЦЕНЫ']
-    },
-    {
-      title: 'Frame 2',
-      image: 'https://cdn.poehali.dev/files/Скриншот 25-12-2025 005211.jpg',
-      labels: ['АКЦИИ', 'НОВОСТИ', 'РАБОТА']
-    }
-  ];
-
   return (
-    <section id="home" className="pt-24 pb-20 px-4 relative overflow-hidden">
+    <section id="home" className="pt-32 pb-20 px-4 relative overflow-hidden">
       <div className="absolute inset-0 gamepad-pattern opacity-50"></div>
       
       <div className="container mx-auto relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-          <div className="relative group cursor-pointer overflow-hidden rounded-lg border-2 border-lime-500/30 hover:border-lime-500 transition-all">
-            <div className="aspect-video bg-cover bg-center" style={{ backgroundImage: `url(${frames[0].image})` }}>
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-all"></div>
-              <div className="absolute top-4 left-4">
-                <div className="text-lime-500 font-bold text-sm mb-2">{frames[0].title}</div>
-                <div className="flex gap-2">
-                  {frames[0].labels.map((label, idx) => (
-                    <span key={idx} className="text-lime-500 text-xs uppercase tracking-wider">{label}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-4 relative">
-                <div className="absolute inset-0 bg-lime-500/20 rounded-full blur-2xl"></div>
-                <div className="relative w-full h-full bg-gradient-to-br from-lime-500 to-lime-700 rounded-full flex items-center justify-center border-4 border-lime-500/50">
-                  <img 
-                    src="https://cdn.poehali.dev/files/Скриншот 25-12-2025 005211.jpg" 
-                    alt="UNDERGROUND Logo" 
-                    className="w-32 h-32 object-contain"
-                  />
-                </div>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-lime-500 glow-lime-strong mb-2">
-                UNDERGROUND
-              </h1>
-              <p className="text-gray-400 text-sm uppercase tracking-widest">Computer Club</p>
-            </div>
-          </div>
-
-          <div className="relative group cursor-pointer overflow-hidden rounded-lg border-2 border-lime-500/30 hover:border-lime-500 transition-all">
-            <div className="aspect-video bg-cover bg-center" style={{ backgroundImage: `url(${frames[1].image})` }}>
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-all"></div>
-              <div className="absolute top-4 left-4">
-                <div className="text-lime-500 font-bold text-sm mb-2">{frames[1].title}</div>
-                <div className="flex gap-2">
-                  {frames[1].labels.map((label, idx) => (
-                    <span key={idx} className="text-lime-500 text-xs uppercase tracking-wider">{label}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="text-center mb-12">
+          <h1 className="text-6xl md:text-8xl font-bold text-lime-500 glow-lime-strong mb-4">
+            UNDERGROUND
+          </h1>
+          <p className="text-gray-400 text-lg uppercase tracking-widest mb-8">Computer Club</p>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Компьютерный клуб нового поколения. Мощное железо, киберспортивная атмосфера, 
             профессиональные турниры
